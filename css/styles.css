@@ -1,0 +1,562 @@
+/* CSS Browser Reset
+*/
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed,
+    figure, figcaption, footer, header, hgroup,
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+    	margin: 0;
+    	padding: 0;
+    	border: 0;
+    	font-size: 100%;
+    	font: inherit;
+    	vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section {
+    	display: block;
+    }
+    body {
+    	line-height: 1;
+    }
+    ol, ul {
+    	list-style: none;
+    }
+    blockquote, q {
+    	quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+    	content: '';
+    	content: none;
+    }
+    table {
+    	border-collapse: collapse;
+    	border-spacing: 0;
+    }
+
+/*Color Palette
+  #DBDBDB lightgrey
+  #D1D1D1 darkergrey
+  #636363 next darkergrey
+  #4C4C4C darkest grey
+  #3791A3 blue
+  */
+
+/*Global styles
+----------------------------*/
+/* Box-Model Fix apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+img {
+max-width: 100%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+body {
+  margin: 0; /* allows page to go to edge*/
+}
+h2 {
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+h5 {
+  margin-top: 270px;
+  font-size: 25px;
+}
+
+a {
+  color: #3791A3;
+}
+a:hover {
+  text-decoration: none; /*removes underline*/
+}
+
+p {
+  text-align: justify;
+  font-size: 22px;
+  line-height: 30px;
+}
+.bio p {
+  text-indent: 2em;
+}
+/*Header & Footer
+----------------------------*/
+header {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: url('../images/reflection2750.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  height: 45vh;
+  width: 100vw;
+  background: #4C4C4C;
+  color: white;
+  text-align: center;
+}
+
+
+/*Misc
+----------------------------*/
+.merch {
+    display: inline-block;
+    width: 50%;
+    height: auto;
+    margin: 5px;
+    border-radius: 25%;
+    overflow: visible; /*tweak*/
+    max-height: 365px;
+    max-width: 365px;
+}
+.contact-info a {
+  padding: 10px; /*padding is better for links (than margin) as it allows for a larger clickable space */
+  display: inline-block;
+  font-size: 30px;
+  color: white;
+}
+
+/* .mySlides {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+} */
+/* .w3-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.w3-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.w3-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+ */
+
+
+/*Section background colors
+----------------------------*/
+.bio {
+  background-color: #D1D1D1;
+}
+.music {
+  background-color: #DBDBDB;
+}
+.tour {
+  background: linear-gradient(rgba(76, 76, 76, 0.7), rgba(76, 76, 76, 1)),
+              url(https://www.dentons.com/-/media/images/website/background-images/offices/new-orleans/new_orleans-1.jpg) no-repeat fixed;
+  background-size: cover;
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+.tour-dates {
+    text-align: center;
+}
+.shop {
+  background-color: #DBDBDB;
+  text-align: center;
+}
+h3 ~ p {
+  margin: 0;
+}
+
+
+
+
+/*Contact form
+----------------------------*/
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  /* resize: vertical; */
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+/* Style the container/contact section */
+.contact-container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  /* display: flex;
+  justify-content: center; */
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+/* .row:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+/* @media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  } */
+}
+
+
+
+
+
+/*Media Queries
+----------------------------*/
+@media (max-width: 376px) {
+  /*Phone*/
+  .content-wrap {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px 0px;
+    overflow: hidden;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .flex-img {
+    flex-grow: 1;
+    max-width: 75%;
+  }
+  .bio-text {
+    flex-grow: 1;
+    margin: 50px auto;
+  }
+  .music-text {
+    margin: 50px auto;
+  }
+  img[src="images/glare.png"]{
+      max-width: 75%;
+      border-radius: 50%;
+  }
+  img[src="images/zabreg.jpg"]{
+      max-width: 75%;
+      border-radius: 50%;
+  }
+  p {
+    text-align: center;
+  }
+  h1 {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 90px;
+    font-weight: 1500;
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px #000000;
+    padding-top:100px;
+  }
+  .block {
+    width: 100%;
+    height: auto;
+    margin: 5px;
+    border-radius: 25%;
+    display: inline-block;
+    overflow: hidden;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    height: 30vh;
+    width: 100vw;
+    background: #4C4C4C;
+    color: white;
+    text-align: center;
+  }
+  .contact-info a {
+    padding: 5px; /*padding is better for links (than margin) as it allows for a larger clickable space */
+    display: inline-block;
+    font-size: 30px;
+    color: white;
+  }
+  /*Mobile Navigation
+  ----------------------------*/
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 18px;
+    background-color: black;
+    box-sizing: border-box;
+    /* padding: 0;
+    margin: 0; */
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+  nav a {
+    display: inline-block;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  .main-nav {
+      list-style-type: none;
+      display: none;
+  }
+  .main-nav li {
+    text-align: right;
+    background-color: black;
+  }
+  .navbar-toggle {
+      position: fixed;
+      top: 10px;
+      right: 20px;
+      cursor: pointer;
+      color: rgba(255,255,255,0.8);
+      font-size: 24px;
+  }
+  .active {
+    display: block;
+  }
+  .logo {
+    display: none;
+  }
+
+}
+
+
+
+
+@media (min-width: 377px) {
+  .content-wrap {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 50px 50px; /*first number is top/bottom, 2nd left/right*/
+    overflow: hidden;
+  }
+  h1 {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 125px;
+    font-weight: 1500;
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px #000000;
+    padding-top:100px;
+  }
+  .bio-text {
+    margin-top: 50px;
+  }
+  .music-text {
+    margin-bottom: 50px;
+  }
+  .about {
+    display: none;
+  }
+  img[src="images/glare.png"]{
+      max-width: 100%;
+      border-radius: 50%;
+  }
+  img[src="images/zabreg.jpg"]{
+      max-width: 100%;
+      border-radius: 50%;
+  }
+  /*Tour Table
+  ----------------------------*/
+  .tour-table {
+    table-layout: fixed;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  .tour-table td {
+    padding: 10px;
+  }
+  /*Mobile Navigation
+  ----------------------------*/
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 18px;
+    /* background-color: black; */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  nav a {
+    display: inline-block;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  .main-nav {
+      list-style-type: none;
+      display: none;
+  }
+  .main-nav li {
+    text-align: right;
+    /* background-color: black; */
+  }
+  .navbar-toggle {
+      position: fixed;
+      top: 10px;
+      right: 20px;
+      cursor: pointer;
+      color: rgba(255,255,255,0.8);
+      font-size: 24px;
+  }
+  .active {
+    display: block;
+  }
+  .logo {
+    display: none;
+  }
+}
+
+
+
+
+@media (min-width: 1000px) {
+   /*Tour Table
+   ----------------------------*/
+   .tour-table {
+     table-layout: fixed;
+     text-align: center;
+     font-weight: bold;
+     font-size: 20px;
+     color: white;
+     text-shadow: 2px 2px 4px #000000;
+   }
+   .tour-table td {
+     padding: 20px;
+   }
+
+   /*Text
+   ----------------------------*/
+   .content-wrap {
+     max-width: 100%;
+     margin: 0 auto;
+     padding: 90px 200px;
+     overflow: hidden;
+   }
+   .container {
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-content: center;
+   }
+   img[src="images/glare.png"]{
+       max-width: 75%;
+       border-radius: 50%;
+   }
+   img[src="images/zabreg.jpg"]{
+       max-width: 75%;
+       border-radius: 50%;
+   }
+
+   /*Desktop Navigation
+   ----------------------------*/
+   nav {
+     position: fixed;
+     top: 0;
+     width: 100%;
+     text-align: center;
+     display: flex;
+     justify-content: center;
+     padding-bottom: 0;
+     height: 70px;
+   }
+   nav a {
+     display: inline-block;
+     padding: 15px 20px;
+     text-decoration: none;
+     font-weight: bold;
+     font-size: 15px;
+     color: white;
+     text-shadow: 2px 2px 4px #000000;
+   }
+   .main-nav {
+     list-style-type: none;
+     display: flex;
+     /* margin-right: 30px; */
+     /* flex-direction: row; */
+     justify-content: center;
+   }
+   .main-nav li {
+     margin: 0;
+   }
+   .nav-links {
+     /* margin-left: 40px; */
+   }
+  .navbar-toggle {
+    display: none;
+   }
+   .logo {
+    display: block;
+    shadow: 2px 2px 4px #000000;
+    color: rgba(255,255,255,0.8);
+    font-size: 24px;
+   }
+}
+
+
+
+
+
+@media (min-width: 1400px) {
+   .content-wrap {
+     max-width: 100%;
+     margin: 0 auto;
+     padding: 90px 300px;
+     overflow: hidden;
+   }
+   h1 {
+     font-family: 'Amatic SC', sans-serif;
+     font-size: 190px;
+     font-weight: 1500;
+     color: whitesmoke;
+     text-shadow: 2px 2px 4px #000000;
+     padding-top:100px;
+   }
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <!-- brains of the page, information to run the page -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script> <!--use FontAwesome-->
+    <meta charset="UTF-8"> <!-- This is set to UTF-8 to make sure special characters like round quotes or accented E's are rendered properly. This refers to the Unicode 8-bit character encoding, which should be used for web content and supports many languages. -->
+    <title>Home - Rileybirds</title>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Montserrat|Indie+Flower|Open+Sans:400,700|Abel" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div>
+    <!-- // Intro -->
+    <header id="home">
+
+
+      <nav class="nav">
+        <span class="navbar-toggle" id="js-navbar-toggle"><i class="fas fa-bars"></i></span>
+          <ul class="main-nav" id="js-menu">
+          <li><a href="#home" class="nav-links">HOME</a></li>
+          <li><a href="#bio" class="nav-links">BIO</a></li>
+          <li><a href="#music" class="nav-links">MUSIC</a></li>
+          <li><a href="#home" class="logo"><i class="fas fa-crow"></i></a></li>
+          <li><a href="#tour" class="nav-links">TOUR</a></li>
+          <li><a href="#shop" class="nav-links">SHOP</a></li>
+          <li><a href="#contact" class="nav-links">CONTACT</a></li>
+        </ul>
+      </nav>
+
+
+
+      <div>
+        <h1>rileybirds</h1>
+        <!-- <h5>Listen to the new single "Divine Mother":</h5><br/>
+        <audio controls>
+          <source src="audio/Divine Mother.mp3" type="audio/mpeg">
+          <source src="audio/Fireflies.mp3" type="audio/mpeg">
+          <source src="audio/RelaxBeLoving.mp3.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio> -->
+      </div>
+    </header>
+
+    <main>
+          <div class="bio content-wrap" id="bio">
+            <h2 class="about">ABOUT</h2>
+            <div class="container">
+              <img src="images/glare.png" srcset="images/glare1600.png 1600w, images/glare2750.png 2750w" class="flex-img">
+              <div class="bio-text">
+                <p>New Orleans-based husband-and-wife duo, Rachael and Joshua Riley play songs from the heart, born of stillness and the sacred love within. Inspired by their yoga and meditation practice, their message is simple… “relax, be loving.”</p>
+                <p>Ranging from ancient mantras to conscious pop, The Rileybirds music explores what it means to live honestly and deeply vulnerable, in order to realize Truth and be unconditional love.</p>
+                <p>The Rileybirds practice Bhakti yoga, offering a portion of the proceeds from their concerts, restorative soundbaths, and recordings to help communities in need.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="slideshow">
+            <img class="mySlides" src="images/reflection2750.png">
+            <img class="mySlides" src="images/sky.png">
+            <img class="mySlides" src="images/sun.jpg">
+            <img class="mySlides" src="images/meditate.png">
+            <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+          </div> -->
+
+          <div class="music content-wrap" id="music">
+            <h2>MUSIC</h2>
+            <div class="container">
+              <div class="music-text">
+                <p>Rachael and Josh are hard at work creating their first album. They have travelled the globe listening deeply to the whispers and shouts of inspiration. From the mountains of Asheville to the beaches of Bali, all the way down to the city of New Orleans and the seas of Croatia.</p>
+              </div>
+              <img src="images/zabreg.jpg" srcset="images/zabreg750.jpg 750w" class="flex-img">
+            </div>
+          </div>
+
+          <div class="tour content-wrap" id="tour">
+            <h2>TOUR</h2>
+                <table style="width:100%" class="tour-table">
+                <tr>
+                  <th>DATE</th>
+                  <th>VENUE</th>
+                  <th>LOCATION</th>
+                </tr>
+                <tr>
+                  <td>January 13 | Sunday</td>
+                  <td>LOVE MORE HOT YOGA</td>
+                  <td>Covington, LA</td>
+                </tr>
+                <tr>
+                  <td>April 27 | Saturday</td>
+                  <td>YOGA FARM FESTIVAL</td>
+                  <td>Shreveport, LA</td>
+                </tr>
+              </table>
+
+
+          </div>
+
+          <div class="shop content-wrap" id="shop">
+            <h2>SHOP</h2>
+              <div class="merch"> <img src="images/shirt.jpg"><br>$25</br></div>
+              <div class="merch"> <img src="images/shirt2.jpg"><br>$25</br></div>
+              <div class="merch"> <img src="images/Hoodies.jpg"><br>$25</br></div>
+              <div class="merch"> <img src="images/tank.jpg"><br>$25</br></div>
+          </div>
+
+          <div class="contact-container content-wrap">
+            <div>
+              <h2>Contact Us</h2>
+              <p>For booking or media inquiries, please contact <strong>booking@rileybirds.com</strong> or fill out the form below.</p>
+            </div>
+            <div class="column">
+
+              <form action="mailto:booking@rileybirds.com" method="post" enctype="text/plain">
+                <label>Name:</label>
+                <input name="sender">
+
+                <label>Email address:</label>
+                <input name="senderEmail">
+
+                <label>Message:</label>
+                <textarea rows="5" cols="20" name="message"></textarea>
+
+                <input type="submit" name="submit">
+                <!-- <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your first name...">
+                <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+                <label for="subject">Subject</label>
+                  <textarea id="subject" name="message" placeholder="Write something..." style="height:170px"></textarea>
+                <input type="submit" value="Submit" class="submit"> -->
+              </form>
+            </div>
+          </div>
+
+
+    </main>
+
+    <!-- // Footer & contact info -->
+    <footer class="contact" id="contact">
+      <div class="content-wrap">
+        <div class="contact-info">
+          <h2>CONTACT</h2>
+            <a href="joshrileymt@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/rzibriley/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/TheRileybirds/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-spotify"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        <!-- <p>Copyright 2018 by Joshua Riley</p> -->
+      </div>
+    </footer>
+</div>
+</body>
+</html>
+<script src="script.js"></script>
