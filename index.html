@@ -76,7 +76,7 @@
 
           <div class="tour content-wrap" id="tour">
             <h2>TOUR</h2>
-                <table style="width:100%" class="tour-table">
+                <!-- <table style="width:100%" class="tour-table">
                 <tr>
                   <th>DATE</th>
                   <th>VENUE</th>
@@ -92,8 +92,21 @@
                   <td>YOGA FARM FESTIVAL</td>
                   <td>Shreveport, LA</td>
                 </tr>
-              </table>
+              </table> -->
 
+              <div class="Rtable Rtable--4cols Rtable--collapse">
+
+                <div class="Rtable-cell Rtable-cell--head"><h3>January 13</h3></div>
+                <div class="Rtable-cell">LOVE MORE HOT YOGA</div>
+                <div class="Rtable-cell">Covington, LA</div>
+                <div class="Rtable-cell Rtable-cell--foot"><a href="">Tickets</a></div>
+
+                <div class="Rtable-cell Rtable-cell--head"><h3>April 27</h3></div>
+                <div class="Rtable-cell">YOGA FARM FESTIVAL</div>
+                <div class="Rtable-cell">Shreveport, LA</div>
+                <div class="Rtable-cell Rtable-cell--foot"><a href="https://yogafarmfest.com/shop/">Tickets</a></div>
+
+              </div>
 
           </div>
 
@@ -106,30 +119,24 @@
           </div>
 
           <div class="contact-container content-wrap">
-            <div>
-              <h2>Contact Us</h2>
-              <p>For booking or media inquiries, please contact <strong>booking@rileybirds.com</strong> or fill out the form below.</p>
-            </div>
             <div class="column">
+              <form action="mailto:booking@rileybirds.com" method="post" enctype="text/plain" id="contact" name="contact">
+                <h2>Contact Us</h2>
+                <p>For booking or media inquiries, please contact <strong>booking@rileybirds.com</strong> or fill out the form below.</p>
+                <br><br>
+                <div>
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your name...">
+                </div>
 
-              <form action="mailto:booking@rileybirds.com" method="post" enctype="text/plain">
-                <label>Name:</label>
-                <input name="sender">
+                <div>
+                  <label for="email">Email Address</label>
+                  <input id="email" name="email" type="email" placeholder="email@example.com">
+                </div>
 
-                <label>Email address:</label>
-                <input name="senderEmail">
-
-                <label>Message:</label>
-                <textarea rows="5" cols="20" name="message"></textarea>
-
-                <input type="submit" name="submit">
-                <!-- <label for="fname">First Name</label>
-                  <input type="text" id="fname" name="firstname" placeholder="Your first name...">
-                <label for="lname">Last Name</label>
-                  <input type="text" id="lname" name="lastname" placeholder="Your last name...">
                 <label for="subject">Subject</label>
                   <textarea id="subject" name="message" placeholder="Write something..." style="height:170px"></textarea>
-                <input type="submit" value="Submit" class="submit"> -->
+                <input type="submit" value="Submit" class="submit">
               </form>
             </div>
           </div>
@@ -141,7 +148,7 @@
     <footer class="contact" id="contact">
       <div class="content-wrap">
         <div class="contact-info">
-          <h2>CONTACT</h2>
+          <!-- <h2>CONTACT</h2> -->
             <a href="joshrileymt@gmail.com"><i class="fas fa-envelope"></i></a>
             <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
             <a href="https://www.instagram.com/rzibriley/" target="_blank"><i class="fab fa-instagram"></i></a>
